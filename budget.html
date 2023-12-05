@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marry Magic - Budget Tracker</title>
+    <link rel="stylesheet" href="./budget.css">
+</head>
+
+<body>
+    <navbar id="nav">
+        <div class="logo"><img src="./assets/logo-final.png"></div>
+        <div class="nav-text">
+            <a href="./index.html">
+                <h3>HOME</h3>
+            </a>
+            <a href="#tracker">
+                <h3>BUGDET TRACKER</h3>
+            </a>
+            <a href="./checklist.html">
+                <h3>CHECKLIST</h3>
+            </a>
+        </div>
+    </navbar>
+
+    <header id="#about">
+        <div class="bg-img">
+            <div class="header-text">
+                <h1>
+                    WEDDING <br>
+                    BUDGET<br>
+                    TRACKER
+                </h1>
+
+            </div>
+        </div>
+    </header>
+
+    <div id="tracker">
+        <h2>Wedding Budget Tracker</h2>
+            <input type="number" name="budget" id="budget-input" placeholder="Enter your budget">
+            <button id="budget-button">Set Budget</button>
+
+            <div class="form">
+                <input type="text" id="name-input" name="name" placeholder="Enter Transaction Name"><br>
+                <input type="number" name="amount" id="amount-input" placeholder="Enter Amount">
+                <input type="date" name="date" id="date-input" placeholder="Enter Date">
+                <button id="add-button">Add</button>
+            </div>
+            <div id="added-items-container">
+                <table id="added-item">
+                    <tr class="head">
+                        <th>TRANSACTION NAME</th>
+                        <th>DATE</th>
+                        <th>AMOUNT</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <!-- <tr class="data">
+                        <th>MONDAY</th>
+                        <td>PSUP</td>
+                        <td>Discrete Maths</td>
+                    </tr> -->
+                </table>
+                    
+            </div>
+    </div>
+    <div id="expense">
+        <table id="expense-tracker">
+            <tr class="head">
+                <th>TOTAL BUDGET</th>
+                <th>SPENT MONEY</th>
+                <th>LEFT AMOUNT</th>
+                
+            
+            </tr>
+            <!-- <tr class="data">
+                <th>MONDAY</th>
+                <td>PSUP</td>
+                <td>Discrete Maths</td>
+            </tr> -->
+        </table>
+    </div>
+     <footer></footer>
+    <script src="./budget.js"></script>
+</body>
+
+</html>

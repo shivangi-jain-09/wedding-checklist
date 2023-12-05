@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/* Body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF0E9;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 0 116px;
+    background-color: #FFF0E9;
+    /* margin-bottom: 50px; */
+}
+
+
+.logo>img {
+    height: 150px;
+    /* width: 90px; */
+}
+
+.nav-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-text>a {
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.nav-text>a:hover {
+
+    color: #578270;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+/* About section starts */
+.bg-img {
+    height: 660px;
+    max-width: 100vw;
+    background-image: url(./assets/bgimage.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    background-repeat: no-repeat;
+    padding: 0vw;
+}
+
+.header-text {
+    color: #455D53;
+    width: 100%;
+    /* padding: 0 116px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header-text>h1 {
+    font-size: 70px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+
+/* About section ends */
+
+
+#list-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+.container {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Styling the input field and button */
+.form input,
+.form button {
+    /* height: 50px; */
+    float: center;
+    font-size: 20px;
+
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.form input {
+    width: 400px;
+    border: 2px solid #455D53;
+    margin-right: 40px;
+}
+
+.form button {
+    width: 100px;
+    background-color: #455D53;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+h2{
+    font-size: 60px;
+    color: #455D53;
+    margin-bottom: 50px;
+}
+
+
+/* #reset {
+    width: 100px;
+    background-color: #7055d3;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+} */
+
+/* Styling the list that contains all the tasks */
+#todolist {
+    width: 500px;
+    margin: 20px auto;
+    list-style-type: none;
+}
+
+#todolist li {
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: -1px -1px 5px 0px gray;
+    border-bottom: 5px solid #455D53;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+#todolist li a {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Styling the span elements created using JavaScript */
+span {
+    cursor: pointer;
+}
+
+footer{
+    width: 100vw;
+    height: 125px;
+    background: url(./assets/footer.png);
+    position: absolute;
+}
